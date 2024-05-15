@@ -1,1 +1,20 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Student Exam Performance Indicator</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Use a Bootstrap container to center the content -->
+    <div class="container">
+        <!-- Use a Bootstrap jumbotron for the welcome message -->
+        <div class="jumbotron text-center mt-5">
+            <h1>Welcome to the home page</h1>
+            <p class="lead">Predict your Maths Score based on your performance in other areas.</p>
+            <a class="btn btn-primary btn-lg" href="{{ url_for('predict_datapoint')}}" role="button">Get Started</a>
+        </div>
+    </div>
+</body>
+</html>
